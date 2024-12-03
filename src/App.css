@@ -1,0 +1,99 @@
+/* General styling */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-image: url("https://coolbackgrounds.io/images/backgrounds/index/disco-dba865f1.png");
+  background-size: cover; /* Ensures the image covers the entire navbar */
+  background-position: center;
+  color: white;
+  width: 192%; /* Full width of the page */
+  margin: 0; /* Removes default margin */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a slight shadow */
+}
+
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 10px;
+  padding: 0;
+  position: relative;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.navbar .nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.navbar .nav-links li a:hover {
+  text-decoration: underline;
+}
+
+/* User list container */
+.user-list-container {
+  padding: 20px;
+  background-image: url("https://images.saymedia-content.com/.image/c_limit%2Ccs_srgb%2Cq_auto:eco%2Cw_519/MTkzOTUzODU0MDkyODc5MzY1/particlesjs-examples.webp");
+  text-align: center;
+  width: 192%;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #e5f1fd;
+}
+
+/* Grid layout for cards */
+.user-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+  gap: 20px; /* Space between cards */
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Individual card styling */
+.user-card {
+  background-color: #e5f1fd;
+  border: 10px solid #5746b0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.user-card:hover {
+  transform: scale(1.05);
+}
+
+.user-card h2 {
+  font-size: 1.25rem;
+  color: #007bff;
+  display: flex;
+  justify-content: center;
+}
+
+.user-card p {
+  font-size: 1rem;
+  color: black;
+   display: flex;
+  justify-content: center;
+}
